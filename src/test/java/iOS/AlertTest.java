@@ -28,6 +28,8 @@ public class AlertTest {
             dc.setCapability("appium:automationName", "XCUITest");
             dc.setCapability("appium:app", System.getProperty("user.dir") + "/apps/UIKitCatalog.app");
             dc.setCapability("appium:deviceName", "iPhone 15 Pro");
+            //test capabilities
+            dc.setCapability("bundleId", "com.example.apple-samplecode.UICatalog");
             driver = new IOSDriver(new URL(appiumServerUrl), dc);
         }
 
